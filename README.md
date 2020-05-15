@@ -1,16 +1,6 @@
-<h1 align="center">
-    <img alt="GoTravel" title="Gotravel" src="" width="200px" />
-</h1>
-
 <h4 align="center">
-  🚀 Projeto GoTravel - Agência de Viagens 1.0
+  Projeto GoTravel - Agência de Viagens 1.0
 </h4>
-
-<br>
-
-<p align="center">
-  <img alt="BeTheHero" src=".github/bethehero.png" width="100%">
-</p>
 
 ## Tecnologias
 
