@@ -1,0 +1,349 @@
+/*
+  Autor: Ricardo Belfort
+  Criado em: 14/05/2020
+*/
+
+/*
+  HEADER STYLES
+*/
+.main_header {
+  width: 100%;
+  height: 100vh; /* view height */
+  background: url(../img/header-background.jpg) no-repeat center center;
+  background-size: cover;
+}
+.main_header .main_header_content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+}
+.main_header .main_header_content .navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main_header .main_header_content .navigation .logo {
+  flex-basis: 200px;
+}
+.main_header .main_header_content .navigation .navbar {
+  flex-basis: calc(100% - 200px);
+}
+.main_header .main_header_content .navigation .navbar ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.main_header .main_header_content .navigation .navbar ul li {
+  margin-right: 48px;
+}
+.main_header .main_header_content .highlight {
+  padding: 160px 160px 80px 160px;
+  text-align: center;
+}
+.main_header .main_header_content .highlight h1 {
+  font-size: 3.4vw;
+  color: var(--white);
+  margin-bottom: 40px;
+  text-shadow: 1px 6px 16px rgba(0, 0, 0, 0.3);
+}
+.main_header .main_header_content .highlight p {
+  font-size: 1.6vw;
+  color: var(--white);
+  margin-bottom: 60px;
+  text-shadow: 1px 6px 16px rgba(0, 0, 0, 0.3);
+}
+.main_header .main_header_content .scrolldown {
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main_header .main_header_content .scrolldown p {
+  font-size: 1em;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  width: 100px;
+  /* transform: rotate(-90deg); */
+  margin-bottom: 10px;
+}
+.main_header .main_header_content .scrolldown span {
+  width: 25px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/*
+  SECTION STYLES
+*/
+.section_header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.section_header .section_title h1 {
+  font-size: 1.4vw;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.section_header .section_title p {
+  font-size: 3vw;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.section_header .slide_btn .slide_nav,
+.slide_travel .places .slide_btn .slide_nav {
+  display: flex;
+}
+.section_header .slide_btn .slide_nav li a,
+.slide_travel .places .slide_btn .slide_nav li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.section_header .slide_btn .slide_nav li a:hover,
+.slide_travel .places .slide_btn .slide_nav li a:hover {
+  background-color: var(--primaryhover);
+  border: 1px solid var(--primaryhover);
+  color: var(--white);
+}
+.section_header .slide_btn .slide_nav li a:last-child {
+  margin-left: 8px;
+}
+
+/*
+  ARTICLE STYLE
+*/
+.art_cities {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.art_cities .box {
+  flex-grow: 1;
+  margin: 0 30px;
+  position: relative;
+}
+.art_cities .box2 {
+  flex-grow: 2;
+  margin-right: 30px;
+  position: relative;
+}
+.art_cities .box:first-child {
+  margin: 0;
+}
+.art_cities .box:last-child {
+  margin: 0;
+}
+.art_cities .box img {
+  max-height: 525px;
+}
+.art_cities .box2 img {
+  max-height: 525px;
+}
+.art_cities .box .caption,
+.art_cities .box2 .caption {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 40px;
+  color: var(--white);
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1)
+  );
+}
+.art_cities .box .caption h1,
+.art_cities .box2 .caption h1 {
+  font-size: 3vw;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.art_cities .box .caption p,
+.art_cities .box2 .caption p {
+  font-size: 1.6vw;
+  font-weight: 400;
+}
+
+/* SLIDE TRAVEL */
+.aboutus_content {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 530px;
+  padding: 100px 0;
+}
+.slide_travel {
+  display: flex;
+  flex-flow: wrap;
+  position: relative;
+}
+.slide_travel .places {
+  flex-basis: 500px;
+  margin-right: 64px;
+  position: relative;
+}
+.slide_travel .places .slide_btn .slide_nav {
+  display: flex;
+  background-color: var(--white);
+  position: absolute;
+  bottom: 100px;
+  right: 0;
+  padding: 12px 0 0 24px;
+  border-top-left-radius: 50px;
+}
+.slide_travel .places .slide_btn .slide_nav li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.slide_travel .places .slide_btn .slide_nav li a:hover {
+  background-color: var(--primaryhover);
+  border: 1px solid var(--primaryhover);
+  color: var(--white);
+}
+.slide_travel .places .slide_btn .slide_nav li a:last-child {
+  margin-left: 8px;
+}
+.slide_travel .places img {
+  width: 31.25em;
+  margin-bottom: 100px;
+}
+.slide_travel .about,
+.testimonial_content .testimonial {
+  flex-basis: 50%;
+}
+.slide_travel .about .about_content {
+  margin-bottom: 60px;
+}
+.slide_travel .about .about_content h1,
+.testimonial_content .testimonial .test_content h1 {
+  font-size: 1.4vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.slide_travel .about .about_content h3 {
+  font-size: 3.2vw;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.slide_travel .about .about_content p {
+  font-size: 1.2vw;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.slide_travel .about .social_info {
+  display: flex;
+  padding: 120px 0 60px 0;
+}
+.slide_travel .about .social_info .face,
+.slide_travel .about .social_info .insta {
+  flex-grow: 1;
+}
+.slide_travel .about .social_info .face h3,
+.slide_travel .about .social_info .insta h3 {
+  font-size: 1.4vw;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.slide_travel .about .social_info .face p,
+.slide_travel .about .social_info .insta p {
+  font-size: 4.4vw;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/*
+  TESTIMONIAL STYLE
+*/
+.testimonial_content {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 400px;
+  padding: 100px 0;
+}
+.testimonial_content .testimonial .test_content h3 {
+  font-size: 3.5vw;
+  font-weight: 700;
+  margin-bottom: 130px;
+}
+.slide_travel .testimonial .customer p {
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+.slide_travel .testimonial .customer .profile {
+  display: flex;
+  align-items: center;
+}
+.slide_travel .testimonial .customer .profile img {
+  width: 80px;
+  height: 80px;
+  margin-right: 30px;
+  border-radius: 50%;
+}
+.slide_travel .testimonial .customer .profile .info h3 {
+  font-size: 1.3vw;
+  font-weight: 700;
+}
+.slide_travel .testimonial .customer .profile .info p {
+  font-size: 1vw;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* FOOTER STYLE */
+.footer_content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0 40px 0;
+}
+.footer_content .helpful_links {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  border-bottom: 1px solid #232323;
+  padding-bottom: 40px;
+}
+.footer_content .helpful_links .navlinks h3 {
+  font-size: 1.2vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+.footer_content .helpful_links .navlinks ul li {
+  padding: .5em 0;
+}
+.footer_content .helpful_links .social_links i {
+  margin-bottom: 10px;
+}
+.footer_content .basic_info {
+  display: flex;
+  justify-content: space-between;
+}
+.footer_content .basic_info p {
+  font-size: 1em;
+  color: var(--gray);
+  text-align: center;
+  margin-bottom: 10px;
+}

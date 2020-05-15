@@ -1,0 +1,184 @@
+/*
+  Autor: Ricardo Belfort
+  Criado em: 14/05/202
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cabin", sans-serif;
+  box-sizing: border-box; /* tamanho real */
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+/*
+  COLOR SCHEMA
+*/
+:root {
+  --white: #fff;
+  --light: #f6f3f2;
+  --gray: #949494;
+  --blue: #1e90ff;
+  --red: #ff4757;
+  --dark: #000;
+  --primary: #ff9900;
+  --primaryhover: #f19000;
+}
+
+img {
+  max-width: 100%;
+}
+
+img a {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--light);
+}
+a:hover {
+  color: var(--primary);
+}
+
+/*
+  CONTAINERS
+*/
+.container {
+  width: 100%;
+}
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+/*
+  MARGINS AND PADDINGS
+*/
+.mb-1 {
+  margin-bottom: 100px;
+}
+.mb-2 {
+  margin-bottom: 200px;
+}
+.mb-3 {
+  margin-bottom: 300px;
+}
+.mb-4 {
+  margin-bottom: 400px;
+}
+.mb-5 {
+  margin-bottom: 520px;
+}
+.mb-6 {
+  margin-bottom: 600px;
+}
+
+/*
+  TEXT COLORS
+*/
+.tx-white {
+  color: var(--white);
+}
+.tx-primary {
+  color: var(--primary);
+}
+.tx-red {
+  color: var(--red);
+}
+.tx-blue {
+  color: var(--blue);
+}
+
+/*
+  BACKGROUND COLORS
+*/
+.bg-light {
+  background-color: var(--light);
+}
+.bg-dark {
+  background-color: var(--dark);
+}
+
+/*
+  BOX STYLES
+*/
+.radius {
+  --radius: 50px;
+  border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -webkit-border-radius: var(--radius);
+}
+.rounded {
+  --rouded: 50%;
+  border-radius: var(--rouded);
+  -moz-border-radius: var(--rouded);
+  -webkit-border-radius: var(--rouded);
+}
+.transition {
+  --transition: 0.2s;
+  transition-duration: var(--transition);
+  -moz-transition-duration: var(--transition);
+  -webkit-transition-duration: var(--transition);
+  cursor: pointer;
+}
+
+/*
+  BUTTON STYLES
+*/
+.btn {
+  display: inline-block;
+  padding: 18px 52px;
+  background: #222;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.btn:hover {
+  color: var(--white);
+  text-decoration: none;
+  background: var(--dark);
+}
+.btn-big {
+  font-size: 1.6vw;
+  font-weight: 700;
+  padding: 24px 62px;
+}
+.btn-primary {
+  background: var(--primary);
+}
+.btn-primary:hover {
+  background: var(--primaryhover);
+}
+.btn-secondary {
+  background: var(--dark);
+}
+.btn-secondary:hover {
+  background: var(--primary);
+}
+
+.btn-primary-out {
+  color: var(--primaryhover);
+  border: 1px solid var(--primaryhover);
+  background: none;
+}
+.btn-primary-out:hover {
+  color: var(--white);
+  border: 1px solid var(--primary);
+  background: var(--primary);
+}
